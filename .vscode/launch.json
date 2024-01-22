@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Run Playground Tests",
+        "program": "${workspaceFolder}/node_modules/@playwright/test/cli.js",
+        "args": [
+          "test",
+          "--config=playwright.config.ts",
+          "--headed",
+          "sports-table-premier.spec.ts"
+        ],
+        "console": "integratedTerminal",
+        "env": {
+        //  "PLAYWRIGHT_BROWSERS_PATH": "0",
+        }
+      },
+      
+    ]
+  }
+  
